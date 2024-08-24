@@ -7,15 +7,24 @@
 
 A ComfyUI node designed to enable seamless multi-user workflow collaboration.
 
-This node allows teams to work together both locally and remotely, making collaboration a breeze. 
-
-Install and setup this node on a server PC. Get Url, share and use. No Need to install comfyui on other PCs. 
-
 ![Untitled design (2)](https://github.com/user-attachments/assets/ce10622d-e210-4e13-b226-fde501c2a94b)
 
 **Features Video**: Coming Soon
 
+<br>
+
+# Important Notes
+
+  - ### **This node should be only installed/maintained on the machine that will act as Server.**
+  - ### **No need to install this node on other users.** 
+  - ### **ComfyUI is also not needed by other users.**
+  - ### **Only URL is needed by other users to connect to server Locally/Remotely**.
+
+<br>
+
 ## Key Features
+
+<br>
 
 - **Multiuser collaboration**: enable multiple users to work on the same workflow simultaneously.
 - **Local and Remote access**: use tools like ngrok or other tunneling software to facilitate remote collaboration. A local IP address on WiFi will also work 😎.
@@ -25,7 +34,12 @@ Install and setup this node on a server PC. Get Url, share and use. No Need to i
 - **Admin permissions**: admins can control who can edit the workflow and who can queue prompts, ensuring the right level of access for each team member.
 - **Workflow backup**: in case of any mishap, you can reload an old backup. The node saves 5 workflows, each 60 seconds apart.
 
-> Note: When Opening the Comfyui Workspace for the first time, It will be locked, Login as admin to enable editing. 
+<br>
+
+>[!WARNING]
+>When Opening the Comfyui Workspace for the first time, It will be locked, Login as admin to enable editing. 
+
+<br>
 
 ## Key Binds
 
@@ -33,106 +47,120 @@ Install and setup this node on a server PC. Get Url, share and use. No Need to i
 - **Show/hide users panel**: press **`LAlt + p`**
 - **Show/hide backups panel**: press **`LAlt + o`** (for editors only)
 
+<br>
+
 ## Chat Commands
 
 - `/nick <name>`: changes your nickname
 - `/login account password`: this command is used to become admin.
 - `/logout`: logout the admin.
 
-# Installation
+<br>
 
-- This Node should be only installed/maintained on the Server Hosting PC. 
-- **No need** to install this node on Client Side Users.
-- Comfy UI is also **NOT NEEDED** to run this on Client Side Users. 
-- Only URL will be shared which will connect with the server to run/view comfy.
+# Node Installation
 
-### Installing Using `comfy-cli`
-- `comfy node registry-install ComfyUI-Nexus`
-- [Node Registry](https://registry.comfy.org/publishers/daxcay/nodes/comfyui-nexus)
+  - ### Installing Using `comfy-cli`
+    - `comfy node registry-install ComfyUI-Nexus`
+    - https://registry.comfy.org/publishers/daxcay/nodes/comfyui-nexus
+  
+  - ### Manual Method
+    - Go to your ComfyUI > Custom Nodes folder path > Run CMD
+    - Copy and paste this command: `git clone https://github.com/daxcay/ComfyUI-Nexus.git`
+  
+  - ### Automatic Method with [Comfy Manager](https://github.com/ltdrdata/ComfyUI-Manager)
+    - Inside ComfyUI > Click the Manager Button on the side.
+    - Click `Custom Nodes Manager` and search for `Nexus`, then install this node.
+  
+  <br>
+  
+  >[!IMPORTANT]
+  > #### **Restart ComfyUI  before proceeding to next step**
 
-### Manual Method
+## Server Setup
 
-- Go to your ComfyUI > Custom Nodes folder path > Run CMD
-- Copy and paste this command: `git clone https://github.com/daxcay/ComfyUI-Nexus.git`
-- Then go inside `ComfyUI-Nexus` with CMD or open a new one.
-- Type `pip install -r requirements.txt` to install the dependencies.
-
-### Automatic Method with [Comfy Manager](https://github.com/ltdrdata/ComfyUI-Manager)
-
-- Inside ComfyUI > Click the Manager Button on the side.
-- Click `Custom Nodes Manager` and search for `Nexus`, then install this node.
-
-**Restart ComfyUI  before proceeding to next step**
-
-### Setting Admin and Password
-
-- Open the file `comfyui`> `nexus`>`admins.json` in notepad.
-
-  ![image](https://github.com/user-attachments/assets/9632115f-12dc-4530-9d5b-b51988898c9d)
-
-  ![admins.json example](https://github.com/user-attachments/assets/0159397d-bf1e-436e-a822-b02ca4dec3b1)
-
-- Write any <AccountName> and <password>, but make sure not to use spaces.
-- **DO NOT SHARE ACCOUNT AND PASSWORD IN PUBLIC** 
-
-  ![admins.json example 2](https://github.com/user-attachments/assets/7ef767b0-ffa0-4bde-8e87-8ab3fc2ba535)
-
-### Save this file and Restart ComfyUI to complete setup.
-
-# Getting Shareable URL
-
-- Use Ngrok or any other tunneling software supporting http/https to Host a Globally. 
-- Also you can host locally over WiFi/Lan.  
-
-### Getting Comfy URL Port 
-
-Open Comfyui in your browser:
-
-![image](https://github.com/user-attachments/assets/b430d5b7-dcb9-4a7f-948f-d257147b597a)
-
-In your url tab, Last digits after Colon is your port.   
-
-Example:
-
-![image](https://github.com/user-attachments/assets/82ff2d9e-9eb6-4846-97c6-e3e321101fef)
-
-The port for the above URL will be **8188**
-
-## Method 1)  To setup global remote access to server
-
-### Ngrok Setup: 
-
-- Go to this https://dashboard.ngrok.com/signup?ref=home-hero to sign up.
-- After signing up and logging in, go to this https://dashboard.ngrok.com/get-started/setup/windows to set up ngrok.
-- After installing and setting up ngrok,
-- Run CMD and enter this command: `ngrok http <port>`
-
- ![Ngrok Output Example](https://github.com/user-attachments/assets/66f9b4a4-1d63-4756-8d57-64420fdc151a)
- ![image](https://github.com/user-attachments/assets/e3ca3d23-a388-4879-8b45-23591a05833c)
-
-
-- "Forwarding" is the Remote Url, Share this url with your peers.
-
-## Method 2) To setup local access to server
-
-### Using Your Local IP Address to Host Server
-
-- Open a cmd and write `ipconfig`.
-
- ![image](https://github.com/user-attachments/assets/56c4c17d-b1dc-40e1-acbc-1e62e8e15b70)
-
-- Now copy this address. For example, if it's `http://192.168.1.45:<comfy_port>`, the final URL will be: `http://192.168.1.45:5000`
-
-> Ngrok and WiFi address will change if you restart the machine. 
-> Follow above steps again to get the new URL.
+  ### Admin Account Setup
+  
+  - Open the file `ComfyUI\nexus\admins.json` in notepad.
+  
+    ![image](https://github.com/user-attachments/assets/2c0f3e6b-8bea-4378-8390-1bb377514e0c)
+  
+  - **"epic"** is the account name and **"comfynexus"** is password 
+  - Replace account and password with your own liking, but make sure not to use spaces.
+  
+  <br>
+  
+  >[!IMPORTANT]
+  >Don't leave the password as "comfynexus" as anyone can login.
+  
+  >[!NOTE]
+  >**DO NOT SHARE ACCOUNT AND PASSWORD IN PUBLIC** 
+  
+  >[!IMPORTANT]
+  > #### Save file and **Restart ComfyUI before proceeding to next step**
+  
+  <br>
+  
+  # Getting Shareable URL
+  
+  - One can use Ngrok or any other tunneling software supporting http/https to Host a Globally. 
+  - Also you can host locally over WiFi/Lan. 
+  
+  ### Getting Comfy URL Port 
+  
+  Open Comfyui in your browser:
+  
+  ![image](https://github.com/user-attachments/assets/b430d5b7-dcb9-4a7f-948f-d257147b597a)
+  
+  In your url tab, Last digits after Colon is your port.   
+  
+  Example:
+  
+  ![image](https://github.com/user-attachments/assets/82ff2d9e-9eb6-4846-97c6-e3e321101fef)
+  
+  The port for the above URL will be **8188**
+  
+  ## Hosting Setup
+  
+  ### Ngrok: 
+  
+  - Go to this https://dashboard.ngrok.com/signup?ref=home-hero to sign up.
+  - After signing up and logging in, go to this https://dashboard.ngrok.com/get-started/setup/windows to set up ngrok.
+  - After installing and setting up ngrok,
+  - Run CMD and enter this command: `ngrok http <port>`
+  
+   ![Ngrok Output Example](https://github.com/user-attachments/assets/66f9b4a4-1d63-4756-8d57-64420fdc151a)
+   ![image](https://github.com/user-attachments/assets/e3ca3d23-a388-4879-8b45-23591a05833c)
+  
+  - "Forwarding" is the Remote Url, Share this url with your peers.
+  
+  <br>
+  
+  ### Local
+  
+  - Open a cmd and write `ipconfig`.
+  
+   ![image](https://github.com/user-attachments/assets/56c4c17d-b1dc-40e1-acbc-1e62e8e15b70)
+  
+  - Now copy this address. For example, if it's `http://192.168.1.45:<comfy_port>`, the final URL will be: `http://192.168.1.45:5000`
+  
+  <br>
+  
+  >[!NOTE]
+  > **Ngrok and WiFi address will change if you restart the machine. Follow above steps again to get the new URL.**
+  
+  <br>
 
 ## Permissions in ComfyUI-Nexus
 
-- **viewer**: default permission given to a person joining.
-- **editor**: person having permission to edit the workflow.
-- **queue prompt**: person having permission to queue the workflow.
+- **viewer**: default permission given to a person joining the server.
+- **editor**: person having editor permission cad edit the workflow.
+- **queue prompt**: person having queue permission can queue the workflow.
+<br>
 
+>[!NOTE]
 > Admin has all permissions by default.
+
+<br>
 
 ## Real-Time Chat Window
 
@@ -147,8 +175,10 @@ To chat, press `t`, then write the message and press 'Enter'.
 ### Chat Commands
 
 - `/nick <name>`: changes your nickname
-- `/login <account> <password>`: this command is used to become admin.
+- `/login <account> <password>`: this command is used to become admin. ( account name and password saved in `admins.json` above )
 - `/logout`: logout the admin.
+
+<br>
 
 ## User Panel
 
@@ -178,6 +208,8 @@ Admins can perform the following actions on a joined user:
 - **queue**: give/revoke queue permission to/from that user. Anyone with this permission can queue the workflow.
 - **mouse**: show/hide the mouse of other players.
 
+<br>
+
 ## Backup Panel (For Admins and Editors Only)
 
 To show/hide the backup panel, press `LAlt + o`.
@@ -190,12 +222,15 @@ To show/hide the backup panel, press `LAlt + o`.
 
 > Backups are saved 60 seconds apart. To load a workflow dragged by an admin, the admin will have to wait 60 seconds to let the server make a backup, then load it for all users.
 
+<br>
+
 ## Future Updates
 
 - Based on feedback, I will add/update features.
 - Multi-room collaboration.
 - Users can set their own color for names and mouse cursors.
-  
+
+<br>
 
 ### Daxton Caylor - ComfyUI Node Developer 
 
