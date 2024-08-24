@@ -96,7 +96,7 @@ A ComfyUI node designed to enable seamless multi-user workflow collaboration. Th
 - Now copy this address. For example, if it's `http://192.168.1.45:<comfy_port>`, the final URL will be: `http://192.168.1.45:5000`
 - Share this with your brother or friends for collaboration.
 
-> Ngrok and WiFi address will change if you restart the machine or application. so follow above steps if somthing goes wrong.
+> Ngrok and WiFi address will change if you restart the machine or application. so follow above steps if something goes wrong.
 <br>
 
 ## Permissions in ComfyUI-Nexus
