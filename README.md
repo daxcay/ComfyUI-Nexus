@@ -48,8 +48,7 @@ A ComfyUI node designed to enable seamless multi-user workflow collaboration. Th
 - Type `pip install -r requirements.txt` to install the dependencies.
 
 ### Automatic Method with [Comfy Manager](https://github.com/ltdrdata/ComfyUI-Manager)
-> This method is in work in progress
-<br>
+
 - Inside ComfyUI > Click the Manager Button on the side.
 - Click `Custom Nodes Manager` and search for `Nexus`, then install this node.
 
