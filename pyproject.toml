@@ -1,0 +1,15 @@
+[project]
+name = "comfyui-nexus"
+description = "Seamless Multiuser Workflow Collaboration"
+version = "1.0"
+license = "LICENSE"
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/daxcay/ComfyUI-Nexus"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = "daxcay"
+DisplayName = "ComfyUI-Nexus"
+Icon = "https://raw.githubusercontent.com/daxcay/ComfyUI-Nexus/master/web/assets/img/logo.jpg"
