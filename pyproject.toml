@@ -1,7 +1,7 @@
 [project]
 name = "comfyui-nexus"
 description = "Node to enable seamless multiuser workflow collaboration"
-version = "1.0a"
+version = "1.0.1"
 license = { file = "LICENSE" }
 dependencies = []
 
