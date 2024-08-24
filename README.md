@@ -13,7 +13,7 @@ Install and setup this node on a server PC. Get Url, share and use. No Need to i
 
 ![Untitled design (2)](https://github.com/user-attachments/assets/ce10622d-e210-4e13-b226-fde501c2a94b)
 
-**Features Video**: https://www.youtube.com/watch?v=RnYIUG59oTM
+**Features Video**: Coming Soon
 
 ## Key Features
 
