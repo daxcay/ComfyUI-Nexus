@@ -76,7 +76,27 @@ A ComfyUI node designed to enable seamless multi-user workflow collaboration.
   >[!IMPORTANT]
   > #### **Restart ComfyUI  before proceeding to next step**
 
-## Server Setup
+<br>
+
+# Server Setup
+
+  <br>
+  
+  ### Knowing ComfyUI Port 
+  
+  - Open Comfyui in your browser:
+  
+    ![image](https://github.com/user-attachments/assets/b430d5b7-dcb9-4a7f-948f-d257147b597a)
+  
+  - In your url tab, digits after colon (:) is your port.   
+  
+    **Example:**
+  
+    ![image](https://github.com/user-attachments/assets/82ff2d9e-9eb6-4846-97c6-e3e321101fef)
+  
+    The port for the above URL will be **8188**
+  
+  <br>
 
   ### Admin Account Setup
   
@@ -97,31 +117,15 @@ A ComfyUI node designed to enable seamless multi-user workflow collaboration.
   
   >[!IMPORTANT]
   > #### Save file and **Restart ComfyUI before proceeding to next step**
-  
-  <br>
-  
-  # Getting Shareable URL
-  
-  - One can use Ngrok or any other tunneling software supporting http/https to Host a Globally. 
+
+<br>
+
+# Hosting Setup
+
+  - One can use Ngrok or any other tunneling software supporting http/https to host a comfyui server remotely. 
   - Also you can host locally over WiFi/Lan. 
-  
-  ### Getting Comfy URL Port 
-  
-  Open Comfyui in your browser:
-  
-  ![image](https://github.com/user-attachments/assets/b430d5b7-dcb9-4a7f-948f-d257147b597a)
-  
-  In your url tab, Last digits after Colon is your port.   
-  
-  Example:
-  
-  ![image](https://github.com/user-attachments/assets/82ff2d9e-9eb6-4846-97c6-e3e321101fef)
-  
-  The port for the above URL will be **8188**
-  
-  ## Hosting Setup
-  
-  ### Ngrok: 
+
+  ### Using Ngrok: 
   
   - Go to this https://dashboard.ngrok.com/signup?ref=home-hero to sign up.
   - After signing up and logging in, go to this https://dashboard.ngrok.com/get-started/setup/windows to set up ngrok.
@@ -130,23 +134,24 @@ A ComfyUI node designed to enable seamless multi-user workflow collaboration.
   
    ![Ngrok Output Example](https://github.com/user-attachments/assets/66f9b4a4-1d63-4756-8d57-64420fdc151a)
    ![image](https://github.com/user-attachments/assets/e3ca3d23-a388-4879-8b45-23591a05833c)
-  
-  - "Forwarding" is the Remote Url, Share this url with your peers.
+
+  - **Forwarding** is the Remote URL, Share this URL with your peers.
   
   <br>
   
-  ### Local
+  ### Using Local IP
   
   - Open a cmd and write `ipconfig`.
   
    ![image](https://github.com/user-attachments/assets/56c4c17d-b1dc-40e1-acbc-1e62e8e15b70)
   
-  - Now copy this address. For example, if it's `http://192.168.1.45:<comfy_port>`, the final URL will be: `http://192.168.1.45:5000`
+  - Now copy IPv4 address ad add comfy port to it. For example, if it's `http://192.168.1.45:<comfy_port>`, the final URL will be: `http://192.168.1.45:5000`
+  - Share this URL with your peers.
   
   <br>
   
   >[!NOTE]
-  > **Ngrok and WiFi address will change if you restart the machine. Follow above steps again to get the new URL.**
+  > **Ngrok and WiFi address might change if you restart the machine. Follow above steps again to get the new URL.**
   
   <br>
 
@@ -166,16 +171,16 @@ A ComfyUI node designed to enable seamless multi-user workflow collaboration.
 
 When you join ComfyUI for the first time, you will see this chat window in the top left corner:
 
-![Chat Window Example](https://github.com/user-attachments/assets/9d8be82d-1e76-46e1-b902-ba8248ccbb26)
+![image](https://github.com/user-attachments/assets/e8826ec1-bbac-44f3-9490-cddd16df75fd)
 
 To chat, press `t`, then write the message and press 'Enter'.
 
 ![Chat Message Example](https://github.com/user-attachments/assets/6b908ade-cd01-43d4-831c-6af2c6c461cf)
-
+<br>
 ### Chat Commands
 
 - `/nick <name>`: changes your nickname
-- `/login <account> <password>`: this command is used to become admin. ( account name and password saved in `admins.json` above )
+- `/login <account> <password>`: this command is used to become admin. **( account name and password saved in `admins.json` above )**
 - `/logout`: logout the admin.
 
 <br>
