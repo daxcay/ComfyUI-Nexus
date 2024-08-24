@@ -1,55 +1,50 @@
+
 ![COMFYUI-NEXUS](https://github.com/user-attachments/assets/6548c010-649b-4e6c-8ae1-f05e3f523f31)
 
 # ComfyUI-Nexus
 
 ![Version](https://img.shields.io/badge/version-1.0.1-green) ![Last Update](https://img.shields.io/badge/last_update-Aug_2024-green)
 
-A ComfyUI node designed to enable seamless multi-user workflow collaboration. This innovative tool allows teams to work together both locally and remotely, making collaboration a breeze. 
-
-Install and setup this node on a server PC.
-Get Url, share and use.
-No Need to install comfyui on other PCs. 
+A ComfyUI node designed to enable seamless multi-user workflow collaboration. 
+This node allows teams to work together both locally and remotely, making collaboration a breeze. 
+Install and setup this node on a server PC. Get Url, share and use. No Need to install comfyui on other PCs. 
 
 ![Untitled design (2)](https://github.com/user-attachments/assets/ce10622d-e210-4e13-b226-fde501c2a94b)
-<br>
 
 **Features Video**: https://www.youtube.com/watch?v=RnYIUG59oTM
-<br>
 
 ## Key Features
 
-- **multiuser collaboration**: enable multiple users to work on the same workflow simultaneously.
-- **local and remote access**: use tools like ngrok or other tunneling software to facilitate remote collaboration. A local IP address on WiFi will also work 😎.
-- **enhanced teamwork**: streamline your team's workflow management and collaboration process.
-- **real-time chat**: communicate directly within the platform to ensure smooth and efficient collaboration.
-- **spectate mode**: allow team members to observe the workflow in real-time without interfering—perfect for training or monitoring progress.
-- **admin permissions**: admins can control who can edit the workflow and who can queue prompts, ensuring the right level of access for each team member.
-- **workflow backup**: in case of any mishap, you can reload an old backup. The node saves 5 workflows, each 60 seconds apart.
-<br>
+- **Multiuser collaboration**: enable multiple users to work on the same workflow simultaneously.
+- **Local and Remote access**: use tools like ngrok or other tunneling software to facilitate remote collaboration. A local IP address on WiFi will also work 😎.
+- **Enhanced teamwork**: streamline your team's workflow management and collaboration process.
+- **Real-time chat**: communicate directly within the platform to ensure smooth and efficient collaboration.
+- **Spectate mode**: allow team members to observe the workflow in real-time without interfering—perfect for training or monitoring progress.
+- **Admin permissions**: admins can control who can edit the workflow and who can queue prompts, ensuring the right level of access for each team member.
+- **Workflow backup**: in case of any mishap, you can reload an old backup. The node saves 5 workflows, each 60 seconds apart.
 
 > Note: When Opening the Comfyui Workspace for the first time, It will be locked, Login as admin to enable editing. 
 
 ## Key Binds
 
-- **activate chat**: press **`t`**
-- **show/hide users panel**: press **`LAlt + p`**
-- **show/hide backups panel**: press **`LAlt + o`** (for editors only)
+- **Activate chat**: press **`t`**
+- **Show/hide users panel**: press **`LAlt + p`**
+- **Show/hide backups panel**: press **`LAlt + o`** (for editors only)
 
 ## Chat Commands
 
 - `/nick <name>`: changes your nickname
 - `/login account password`: this command is used to become admin.
 - `/logout`: logout the admin.
-<br>
 
 # Installation
 
 - This Node should be only installed/maintained on the Server Hosting PC. 
 - **No need** to install this node on Client Side Users.
-- Comfy UI is also **NOT NEEDED** to run this on Client Side Users. Only Url will be shared which will connect with the server to run/view comfy.
+- Comfy UI is also **NOT NEEDED** to run this on Client Side Users. 
+- Only URL will be shared which will connect with the server to run/view comfy.
 
-
-### Using `comfy-cli`
+### Installing Using `comfy-cli`
 - `comfy node registry-install ComfyUI-Nexus`
 - [Node Registry](https://registry.comfy.org/publishers/daxcay/nodes/comfyui-nexus)
 
@@ -65,8 +60,7 @@ No Need to install comfyui on other PCs.
 - Inside ComfyUI > Click the Manager Button on the side.
 - Click `Custom Nodes Manager` and search for `Nexus`, then install this node.
 
-**Restart ComfyUI to make all the necessary first time file before making admin list**
-<br>
+**Restart ComfyUI  before proceeding to next step**
 
 ### Setting Admin and Password
 
@@ -77,7 +71,7 @@ No Need to install comfyui on other PCs.
   ![admins.json example](https://github.com/user-attachments/assets/0159397d-bf1e-436e-a822-b02ca4dec3b1)
 
 - Write any <AccountName> and <password>, but make sure not to use spaces.
-- DO NOT SHARE ACCOUNT AND PASSWORD IN PUBLIC. 
+- **DO NOT SHARE ACCOUNT AND PASSWORD IN PUBLIC** 
 
   ![admins.json example 2](https://github.com/user-attachments/assets/7ef767b0-ffa0-4bde-8e87-8ab3fc2ba535)
 
@@ -85,24 +79,24 @@ No Need to install comfyui on other PCs.
 
 # Getting Shareable URL
 
-Use Ngrok or any other tunneling software supporting http/https to Host a Global Server. Also you can host locally over wifi/lan.  
+- Use Ngrok or any other tunneling software supporting http/https to Host a Globally. 
+- Also you can host locally over WiFi/Lan.  
 
-### Getting Url Port 
+### Getting Comfy URL Port 
+
 Open Comfyui in your browser:
 
 ![image](https://github.com/user-attachments/assets/b430d5b7-dcb9-4a7f-948f-d257147b597a)
 
 In your url tab, Last digits after Colon is your port.   
 
-  
 Example:
 
 ![image](https://github.com/user-attachments/assets/82ff2d9e-9eb6-4846-97c6-e3e321101fef)
 
-The port for the above url will be **8188**
+The port for the above URL will be **8188**
 
-
-## Method 1) Remote Access - To Obtain Global Shareable Link
+## Method 1)  To setup global remote access to server
 
 ### Ngrok Setup: 
 
@@ -111,36 +105,32 @@ The port for the above url will be **8188**
 - After installing and setting up ngrok,
 - Run CMD and enter this command: `ngrok http <port>`
 
-  ![Ngrok Output Example](https://github.com/user-attachments/assets/66f9b4a4-1d63-4756-8d57-64420fdc151a)
-  ![Ngrok URL Example](https://github.com/user-attachments/assets/075613e2-d3f0-4a9d-b844-dc06f3c4adf3)
+ ![Ngrok Output Example](https://github.com/user-attachments/assets/66f9b4a4-1d63-4756-8d57-64420fdc151a)
+ ![image](https://github.com/user-attachments/assets/e3ca3d23-a388-4879-8b45-23591a05833c)
+
 
 - "Forwarding" is the Remote Url, Share this url with your peers.
 
+## Method 2) To setup local access to server
 
-## Method 2) Local Wifi/Lan Url: 
-
-### Using Your IP Address to Host Server
+### Using Your Local IP Address to Host Server
 
 - Open a cmd and write `ipconfig`.
 
-  ![ipconfig Example](https://github.com/user-attachments/assets/043f2d9b-eccd-46cb-a333-ec483222b6d4)
-
+ ![image](https://github.com/user-attachments/assets/56c4c17d-b1dc-40e1-acbc-1e62e8e15b70)
 
 - Now copy this address. For example, if it's `http://192.168.1.45:<comfy_port>`, the final URL will be: `http://192.168.1.45:5000`
 
-
-> Ngrok and WiFi address will change if you restart the machine. Follow above steps again to get the new url.
-
+> Ngrok and WiFi address will change if you restart the machine. 
+> Follow above steps again to get the new URL.
 
 ## Permissions in ComfyUI-Nexus
 
 - **viewer**: default permission given to a person joining.
 - **editor**: person having permission to edit the workflow.
 - **queue prompt**: person having permission to queue the workflow.
-<br>
 
 > Admin has all permissions by default.
-<br>
 
 ## Real-Time Chat Window
 
@@ -151,14 +141,12 @@ When you join ComfyUI for the first time, you will see this chat window in the t
 To chat, press `t`, then write the message and press 'Enter'.
 
 ![Chat Message Example](https://github.com/user-attachments/assets/6b908ade-cd01-43d4-831c-6af2c6c461cf)
-<br>
 
 ### Chat Commands
 
 - `/nick <name>`: changes your nickname
 - `/login <account> <password>`: this command is used to become admin.
 - `/logout`: logout the admin.
-<br>
 
 ## User Panel
 
@@ -175,7 +163,6 @@ Users can perform the following actions on a joined user:
 - **mouse**: show/hide the mouse of other players.
 - **spectate**: enable/disable spectate mode. Main use case: when you want to see or learn something from another user.
 
-
 **For admins, the user panel will look like this:**
 
 ![Admin Panel Example](https://github.com/user-attachments/assets/0ce11918-4890-4202-a2d0-2df6f3a1fae0)
@@ -189,9 +176,6 @@ Admins can perform the following actions on a joined user:
 - **queue**: give/revoke queue permission to/from that user. Anyone with this permission can queue the workflow.
 - **mouse**: show/hide the mouse of other players.
 
-
-<br>
-
 ## Backup Panel (For Admins and Editors Only)
 
 To show/hide the backup panel, press `LAlt + o`.
@@ -203,16 +187,13 @@ To show/hide the backup panel, press `LAlt + o`.
 - **load**: load the backup on ComfyUI. If the admin presses it, it will load for all users.
 
 > Backups are saved 60 seconds apart. To load a workflow dragged by an admin, the admin will have to wait 60 seconds to let the server make a backup, then load it for all users.
-<br>
 
 ## Future Updates
 
 - Based on feedback, I will add/update features.
 - Multi-room collaboration.
 - Users can set their own color for names and mouse cursors.
-<br>
-
-
+  
 
 ### Daxton Caylor - ComfyUI Node Developer 
 
@@ -223,4 +204,5 @@ To show/hide the backup panel, press `LAlt + o`.
   - ### Support
      - **Patreon**: https://patreon.com/daxtoncaylor
      - **Buy me a coffee**: https://buymeacoffee.com/daxtoncaylor
+
 
