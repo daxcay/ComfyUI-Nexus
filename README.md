@@ -5,8 +5,10 @@
 
 ![Version](https://img.shields.io/badge/version-1.0.1-green) ![Last Update](https://img.shields.io/badge/last_update-Aug_2024-green)
 
-A ComfyUI node designed to enable seamless multi-user workflow collaboration. 
+A ComfyUI node designed to enable seamless multi-user workflow collaboration.
+
 This node allows teams to work together both locally and remotely, making collaboration a breeze. 
+
 Install and setup this node on a server PC. Get Url, share and use. No Need to install comfyui on other PCs. 
 
 ![Untitled design (2)](https://github.com/user-attachments/assets/ce10622d-e210-4e13-b226-fde501c2a94b)
