@@ -172,6 +172,7 @@ To show/hide the backup panel, press `LAlt + o`.
 # Contact and Support
 
 ### Patreon: [link](https://patreon.com/daxtoncaylor)
+### Reddit: [link](https://www.reddit.com/user/daxtoncaylor)
 
 ### Support My Mission:
 
