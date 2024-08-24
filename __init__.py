@@ -7,7 +7,7 @@ import uuid
 from aiohttp import web
 from server import PromptServer
 
-from .lib.WebSocketManager import WebSocketManager
+from .classes.WebSocketManager import WebSocketManager
 
 DATA_FOLDER = './nexus'
 
