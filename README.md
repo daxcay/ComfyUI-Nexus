@@ -58,7 +58,9 @@ A ComfyUI node designed to enable seamless multi-user workflow collaboration. Th
 
 ### Setting Admin Password
 
-- Go to the `comfyui` folder > `nexus` folder > `admins.json`
+- Go to the `comfyui` folder > `nexus` folder > open `admins.json` in notepad.
+
+  ![image](https://github.com/user-attachments/assets/9632115f-12dc-4530-9d5b-b51988898c9d)
 
   ![admins.json example](https://github.com/user-attachments/assets/0159397d-bf1e-436e-a822-b02ca4dec3b1)
 
