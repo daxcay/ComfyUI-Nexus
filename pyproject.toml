@@ -12,4 +12,4 @@ Repository = "https://github.com/daxcay/ComfyUI-Nexus"
 [tool.comfy]
 PublisherId = "daxcay"
 DisplayName = "ComfyUI-Nexus"
-Icon = "https://raw.githubusercontent.com/daxcay/ComfyUI-Nexus/master/web/assets/img/logo.jpg"
+Icon = "https://raw.githubusercontent.com/daxcay/ComfyUI-Nexus/master/web/assets/img/logo.png"
