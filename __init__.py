@@ -25,7 +25,7 @@ if not os.path.exists(DATA_FOLDER):
 if not os.path.exists(ADMINS_FILE):
     with open(ADMINS_FILE, 'w') as f:
         admins_data = {'epic': 'comfynexus'}
-        json.dump(admins_data, f)
+        json.dump(admins_data, f, indent=4)
 
 for file_path in [PERMISSIONS_FILE, ADMINS_FILE, TOKENS_FILE, NAMES_FILE]:
     if not os.path.exists(file_path):
