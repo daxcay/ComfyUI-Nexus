@@ -174,9 +174,6 @@ To show/hide the backup panel, press `LAlt + o`.
 
 # Contact and Support
 
-### Patreon: [link](https://patreon.com/daxtoncaylor)
-### Reddit: [link](https://www.reddit.com/user/daxtoncaylor)
-
 ### Support My Mission:
 
 By becoming a Patron, you'll gain exclusive benefits, including:
@@ -190,12 +187,13 @@ Join me in my goal of creating a more robust and intuitive AI collaboration expe
 ### Daxton Caylor - ComfyUI Node Developer 
 
   - ### Contact
-     - **Twitter**: @daxcay27
      - **Email** - daxtoncaylor@gmail.com
      - **Discord** - daxtoncaylor
      - **DiscordServer**: https://discord.gg/Z44Zjpurjp
     
   - ### Support
+     - **Patreon**: [link](https://patreon.com/daxtoncaylor)
+     - **Reddit**: [link](https://www.reddit.com/user/daxtoncaylor)
      - **Buy me a coffee**: https://buymeacoffee.com/daxtoncaylor
      - **Support me on paypal**: https://paypal.me/daxtoncaylor
 
