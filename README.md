@@ -2,6 +2,8 @@
 
 # ComfyUI-Nexus
 
+![image](https://img.shields.io/badge/version-1.0.1-green) ![image](https://img.shields.io/badge/last_update-Aug_2024-green)
+
 A ComfyUI node designed to enable seamless multiuser workflow collaboration. This innovative tool allows teams to work together both locally and remotely, making collaboration a breeze.
 
 ### Key Features:
