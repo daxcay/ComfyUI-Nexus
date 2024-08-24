@@ -7,7 +7,9 @@
 A ComfyUI node designed to enable seamless multi-user workflow collaboration. This innovative tool allows teams to work together both locally and remotely, making collaboration a breeze.
 
 ![Untitled design (2)](https://github.com/user-attachments/assets/ce10622d-e210-4e13-b226-fde501c2a94b)
+<br>
 
+**Features Video**: https://www.youtube.com/watch?v=RnYIUG59oTM
 <br>
 
 ## Key Features
