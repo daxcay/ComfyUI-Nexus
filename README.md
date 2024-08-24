@@ -102,7 +102,7 @@ Example:
 The port for the above url will be **8188**
 
 
-## 1) Remote Access - To Obtain Global Shareable Link
+## Method 1) Remote Access - To Obtain Global Shareable Link
 
 ### Ngrok Setup: 
 
@@ -114,9 +114,10 @@ The port for the above url will be **8188**
   ![Ngrok Output Example](https://github.com/user-attachments/assets/66f9b4a4-1d63-4756-8d57-64420fdc151a)
   ![Ngrok URL Example](https://github.com/user-attachments/assets/075613e2-d3f0-4a9d-b844-dc06f3c4adf3)
 
-- "Forwarding" is the Remote Url, Share this url with your peers. 
+- "Forwarding" is the Remote Url, Share this url with your peers.
 
-## 2) Local Wifi/Lan Url: 
+
+## Method 2) Local Wifi/Lan Url: 
 
 ### Using Your IP Address to Host Server
 
@@ -127,8 +128,8 @@ The port for the above url will be **8188**
 
 - Now copy this address. For example, if it's `http://192.168.1.45:<comfy_port>`, the final URL will be: `http://192.168.1.45:5000`
 
-> Ngrok and WiFi address will change if you restart the machine or application. so follow above steps if something goes wrong.
-<br>
+
+> Ngrok and WiFi address will change if you restart the machine. Follow above steps again to get the new url.
 
 
 ## Permissions in ComfyUI-Nexus
