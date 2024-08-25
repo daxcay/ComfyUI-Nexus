@@ -46,6 +46,8 @@ A ComfyUI node designed to enable seamless multi-user workflow collaboration.
 
 ## Disabling ComfyUI-Nexus
 
+<br>
+
   - Stop ComfyUI and go to `ComfyUI\custom_nodes` folder
   - Rename `ComfyUI-Nexus` like this `ComfyUI-Nexus.disabled` to disable.
   - Restart ComfyUI again.
