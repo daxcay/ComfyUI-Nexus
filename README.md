@@ -37,7 +37,10 @@ A ComfyUI node designed to enable seamless multi-user workflow collaboration.
 <br>
 
 >[!WARNING]
->When Opening the Comfyui Workspace for the first time, It will be locked, Login as admin to enable editing. 
+>When Opening the Comfyui Workspace for the first time, It will be locked, Login as admin to enable editing.
+
+>[!WARNING]
+>Move or Disable this ComfyUI-Nexus nodes from the custom nodes folder to return to your Normal ComfyUI
 
 <br>
 
