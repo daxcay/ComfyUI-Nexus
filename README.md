@@ -45,7 +45,8 @@ A ComfyUI node designed to enable seamless multi-user workflow collaboration.
 
 - **Activate chat**: press **`t`**
 - **Show/hide users panel**: press **`LAlt + p`**
-- **Show/hide backups panel**: press **`LAlt + o`** (for editors only)
+- **Show/hide backups panel**: press **`LAlt + o`** (for user with editor permission only)
+- **Queue promt**: press **`CTRL+Enter`** (for user with queue permission only)
 
 <br>
 
