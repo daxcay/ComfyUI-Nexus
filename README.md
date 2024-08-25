@@ -15,10 +15,30 @@ A ComfyUI node designed to enable seamless multi-user workflow collaboration.
 
 # Important Notes
 
-  - ### **This node should be only installed/maintained on the machine that will act as Server.**
-  - ### **No need to install this node on other users.** 
-  - ### **ComfyUI is also not needed by other users.**
-  - ### **Only URL is needed by other users to connect to server Locally/Remotely**.
+>[!WARNING]
+>When Opening the Comfyui Workspace for the first time, It will be locked, Login as admin to enable editing.
+
+>[!WARNING]
+>Move or Disable this ComfyUI-Nexus nodes from the custom nodes folder, if you want to return to your Normal ComfyUI
+
+<br>
+
+- **Install/Maintain on Server Only**: This node should only be installed on the server machine.
+- **No Installation Needed for Others**: Other users don’t need to install this node.
+- **URL for Connection**: Other users only need the URL to connect locally/remotely.
+
+- **Security**:
+  - ComfyUI menu and features are for admins only.
+  - ComfyUI shortcuts are for admins only.
+  - Prompt Queue shortcut `CTRL+Enter` is for users with queue permission only.
+
+- **Editor Permissions**:
+  - Editors can only edit the graph (create/update/delete/move).
+  - If an editor has queue permission, they can queue prompts in the workflow.
+
+- **All Admin Server (not recommended)**:
+  - One can create a server with all admins to resolve permission issues.
+  - Refer to the `Admin Account Setup` section for more details.
 
 <br>
 
@@ -33,14 +53,6 @@ A ComfyUI node designed to enable seamless multi-user workflow collaboration.
 - **Spectate mode**: allow team members to observe the workflow in real-time without interfering—perfect for training or monitoring progress.
 - **Admin permissions**: admins can control who can edit the workflow and who can queue prompts, ensuring the right level of access for each team member.
 - **Workflow backup**: in case of any mishap, you can reload an old backup. The node saves 5 workflows, each 60 seconds apart.
-
-<br>
-
->[!WARNING]
->When Opening the Comfyui Workspace for the first time, It will be locked, Login as admin to enable editing.
-
->[!WARNING]
->Move or Disable this ComfyUI-Nexus nodes from the custom nodes folder, if you want to return to your Normal ComfyUI
 
 <br>
 
@@ -110,7 +122,14 @@ A ComfyUI node designed to enable seamless multi-user workflow collaboration.
   
   - **"epic"** is the account name and **"comfynexus"** is password 
   - Replace account and password with your own liking, but make sure not to use spaces.
-  
+
+  #### More than 1 Admin Account Setup
+    
+    - Open the file `ComfyUI\nexus\admins.json` in notepad. add another account and password like this.
+    ![image](https://github.com/user-attachments/assets/35461ce1-b1a6-4ddb-8333-5dcf7d6acf55)
+
+    - Make sure every password is different, and make sure not to use spaces.
+      
   <br>
   
   >[!IMPORTANT]
