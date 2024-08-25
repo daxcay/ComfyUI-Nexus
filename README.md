@@ -7,7 +7,7 @@
 
 A ComfyUI node designed to enable seamless multi-user workflow collaboration.
 
-![Untitled design (2)](https://github.com/user-attachments/assets/ce10622d-e210-4e13-b226-fde501c2a94b)
+![Untitled design (2)](https://github.com/user-attachments/assets/1d1f4b2b-0999-461e-b43c-719d107c54df)
 
 **Features Video**: Coming Soon
 
