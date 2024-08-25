@@ -44,6 +44,12 @@ A ComfyUI node designed to enable seamless multi-user workflow collaboration.
 
 <br>
 
+> [!CAUTION]
+> Enable the old `litegraph(legacy)` node search box. (New node search box is under development and has bugs)
+
+![Untitled design (4)](https://github.com/user-attachments/assets/336a29e8-f6fb-4730-bd6d-f6b94947941b)
+
+
 ## Disabling ComfyUI-Nexus
 
 <br>
