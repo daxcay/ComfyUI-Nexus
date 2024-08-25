@@ -15,12 +15,6 @@ A ComfyUI node designed to enable seamless multi-user workflow collaboration.
 
 # Important Notes
 
->[!WARNING]
->When Opening the Comfyui Workspace for the first time, It will be locked, Login as admin to enable editing.
-
->[!WARNING]
->Move or Disable this ComfyUI-Nexus nodes from the custom nodes folder, if you want to return to your Normal ComfyUI
-
 <br>
 
 - **Install/Maintain on Server Only**: This node should only be installed on the server machine.
@@ -39,6 +33,22 @@ A ComfyUI node designed to enable seamless multi-user workflow collaboration.
 - **All Admin Server (not recommended)**:
   - One can create a server with all admins to resolve permission issues.
   - Refer to the `Admin Account Setup` section for more details.
+
+<br>
+
+> [!WARNING]
+> When opening the ComfyUI workspace for the first time, it will be locked. Login as admin to enable editing.
+
+> [!WARNING]
+> Move or disable the ComfyUI-Nexus nodes from the custom nodes folder if you want to return to your normal ComfyUI setup.
+
+<br>
+
+## Disabling ComfyUI-Nexus
+
+  - Stop ComfyUI and go to custom_nodes folder
+  - Rename `ComfyUI-Nexus` like this `ComfyUI-Nexus.disabled` to disable.
+  - Restart ComfyUI again.
 
 <br>
 
