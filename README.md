@@ -135,12 +135,13 @@ A ComfyUI node designed to enable seamless multi-user workflow collaboration.
   - **"epic"** is the account name and **"comfynexus"** is password 
   - Replace account and password with your own liking, but make sure not to use spaces.
 
-  #### More than 1 Admin Account Setup
+  ### More than 1 Admin Account Setup
+  
+  - Open the file `ComfyUI\nexus\admins.json` in notepad. add another account(s) and password(s) like this.
     
-    - Open the file `ComfyUI\nexus\admins.json` in notepad. add another account and password like this.
     ![image](https://github.com/user-attachments/assets/35461ce1-b1a6-4ddb-8333-5dcf7d6acf55)
-
-    - Make sure every password is different, and make sure not to use spaces.
+    
+  - Make sure every password is different, and make sure not to use spaces.
       
   <br>
   
