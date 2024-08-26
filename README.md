@@ -213,12 +213,14 @@ A ComfyUI node designed to enable seamless multi-user workflow collaboration.
 
 When you join ComfyUI for the first time, you will see this chat window in the top left corner:
 
-![image](https://github.com/user-attachments/assets/e8826ec1-bbac-44f3-9490-cddd16df75fd)
+![Chat Message Example](https://github.com/user-attachments/assets/6b908ade-cd01-43d4-831c-6af2c6c461cf)
+
+<br>
 
 To chat, press `t`, then write the message and press 'Enter'.
 
-![Chat Message Example](https://github.com/user-attachments/assets/6b908ade-cd01-43d4-831c-6af2c6c461cf)
 <br>
+
 ### Chat Commands
 
 - `/nick <name>`: changes your nickname
