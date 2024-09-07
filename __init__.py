@@ -308,7 +308,14 @@ if hasattr(PromptServer, 'instance'):
         if user_permission:
             return web.json_response(user_permission)
         else:
-            return web.json_response({'error': 'User not found'}, status=404)
+            with open(PERMISSIONS_FILE, 'r+') as f:
+                permissions = json.load(f)
+                permissions[user_id] = {'queue': False, 'editor': False, 'admin': False}
+                f.seek(0)
+                json.dump(permissions, f)
+                f.truncate()
+                user_permission = permissions[user_id]
+            return web.json_response(user_permission)
 
     @routes.post("/nexus/permission/{id}")
     async def post_permission_by_id(request):
