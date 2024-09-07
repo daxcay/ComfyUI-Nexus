@@ -231,7 +231,7 @@ To chat, press `t`, then write the message and press 'Enter'.
 
 ## User Panel
 
-To show/hide the user panel, press `LAlt + p`.
+To show/hide the user panel, press `LShift+ LAlt + p`.
 
 **For users, the user panel will look like this:**
 
@@ -261,13 +261,25 @@ Admins can perform the following actions on a joined user:
 
 ## Backup Panel (For Admins and Editors Only)
 
-To show/hide the backup panel, press `LAlt + o`.
+To show/hide the backup panel, press `LShift + LAlt + o`.
 
 **The backup panel looks like this:**
 
+## OLD
 ![Backup Panel Example](https://github.com/user-attachments/assets/27af5386-b848-4081-a88d-e8d4967a72f0)
 
+## NEW
+![image](https://github.com/user-attachments/assets/423c9e23-b13a-4b50-998c-712ec7f08f51)
+
 - **load**: load the backup on ComfyUI. If the admin presses it, it will load for all users.
+
+<br>
+
+Backups are now divided into **'Short Term'** and **'Long Term'**
+
+**Short Term**: These are only 5 backups and are saved 60 seconds apart.
+
+**Long Term**: These backups are created every reload and they are never overwritten.
 
 > Backups are saved 60 seconds apart. To load a workflow dragged by an admin, the admin will have to wait 60 seconds to let the server make a backup, then load it for all users.
 
