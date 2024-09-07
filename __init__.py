@@ -3,6 +3,7 @@ import json
 import os
 import shutil
 import datetime
+import time
 import uuid
 from aiohttp import web
 from server import PromptServer
@@ -172,6 +173,11 @@ if hasattr(PromptServer, 'instance'):
             with open(file_path, 'r') as f:
                 workflows[file_name] = json.load(f)
 
+        for file_name in sorted([f for f in os.listdir(user_workflow_dir) if not f.isdigit()]):
+            file_path = os.path.join(user_workflow_dir, file_name)
+            with open(file_path, 'r') as f:
+                workflows[file_name] = json.load(f)
+
         return web.json_response(workflows)
 
     @routes.post("/nexus/workflows/meta")
@@ -193,6 +199,16 @@ if hasattr(PromptServer, 'instance'):
 
         meta_data = []
         for file_name in sorted([f for f in os.listdir(user_workflow_dir) if f.isdigit()], key=int):
+            file_path = os.path.join(user_workflow_dir, file_name)
+            last_modified_time = os.path.getmtime(file_path)
+            last_modified_readable = datetime.datetime.fromtimestamp(last_modified_time).strftime('%Y-%m-%d %H:%M:%S')
+
+            meta_data.append({
+                'file_name': file_name,
+                'last_saved': last_modified_readable
+            })
+
+        for file_name in sorted([f for f in os.listdir(user_workflow_dir) if not f.isdigit()]):
             file_path = os.path.join(user_workflow_dir, file_name)
             last_modified_time = os.path.getmtime(file_path)
             last_modified_readable = datetime.datetime.fromtimestamp(last_modified_time).strftime('%Y-%m-%d %H:%M:%S')
@@ -274,6 +290,32 @@ if hasattr(PromptServer, 'instance'):
             f.seek(0)
             json.dump(server_config, f, indent=4)
             f.truncate()
+
+        return web.json_response({'status': 'success'}, status=200)
+    
+    @routes.post("/nexus/workflow/backup")
+    async def post_workflow(request):
+
+        user_id = (await request.json()).get('user_id')
+        if not user_id:
+            return web.json_response({'error': 'User ID required'}, status=400)
+
+        with open(PERMISSIONS_FILE, 'r') as f:
+            permissions = json.load(f)
+
+        user_permissions = permissions.get(user_id, {})
+        if not user_permissions.get('editor', False):
+            return web.json_response({'error': 'Forbidden'}, status=403)
+
+        new_data = await request.json()
+
+        user_workflow_dir = os.path.join(WORKFLOWS_DIR, user_id)
+        if not os.path.exists(user_workflow_dir):
+            os.makedirs(user_workflow_dir)
+
+        new_file_path = os.path.join(user_workflow_dir, f'lt_{round(time.time() * 1000)}')
+        with open(new_file_path, 'w') as f:
+            json.dump(new_data, f, indent=4)
 
         return web.json_response({'status': 'success'}, status=200)
     
