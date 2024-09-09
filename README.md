@@ -3,7 +3,7 @@
 
 # ComfyUI-Nexus
 
-![Version](https://img.shields.io/badge/version-1.0.2-green) ![Last Update](https://img.shields.io/badge/last_update-Aug_2024-green)
+![Version](https://img.shields.io/badge/version-1.0.2-green) ![Last Update](https://img.shields.io/badge/last_update-Sept_2024-green)
 
 A ComfyUI node designed to enable seamless multi-user workflow collaboration.
 
