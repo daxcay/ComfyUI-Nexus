@@ -49,6 +49,18 @@ A ComfyUI node designed to enable seamless multi-user workflow collaboration.
 
 ![Untitled design (4)](https://github.com/user-attachments/assets/336a29e8-f6fb-4730-bd6d-f6b94947941b)
 
+<br>
+
+### Location of Nexus folder
+
+#### ComfyUI Folder
+  - `Drive:/ComfyUI_windows_portable/nexus`
+
+#### Stable Matrix
+   -  **Full Version**: `Drive:/StabilityMatrix/Packages/ComfyUI/nexus`
+   -  **Portable Version**: `Drive:/StabilityMatrix/Data/Packages/ComfyUI/nexus`
+
+<br>
 
 ## Disabling ComfyUI-Nexus
 
