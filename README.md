@@ -297,12 +297,16 @@ Backups are now divided into **'Short Term'** and **'Long Term'**
 
 <br>
 
+## Inspiration
+
+- Greatly Inspired by https://multitheftauto.com/ a GTA:SA multiplayer mod I spent years playing ❤️.
+
 ## Future Updates
 
 - Based on feedback, I will add/update features.
 - Multi-room collaboration.
 - Users can set their own color for names and mouse cursors.
-
+  
 <br>
 
 ### Daxton Caylor - ComfyUI Node Developer 
