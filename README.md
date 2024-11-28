@@ -162,6 +162,20 @@ A ComfyUI node designed to enable seamless multi-user workflow collaboration.
   - Make sure every password is different, and make sure not to use spaces.
       
   <br>
+
+  ### Setting run_nvidia_gpu.bat (Local setup if not using Tunneling Software)
+
+  - Open *run_nvidia_gpu.bat* and write the following and save it:
+
+    ```.\python_embeded\python.exe -s ComfyUI\main.py --windows-standalone-build --disable-auto-launch --enable-cors-header "*"```
+
+    <br>
+
+  - For a host machine in another IP Address write and save it:
+
+    ```.\python_embeded\python.exe -s ComfyUI\main.py --windows-standalone-build --disable-auto-launch --enable-cors-header "*" --listen 0.0.0.0``` 
+
+    <br>
   
   >[!IMPORTANT]
   >Don't leave the password as "comfynexus" as anyone can login.
