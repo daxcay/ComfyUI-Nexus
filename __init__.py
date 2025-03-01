@@ -7,10 +7,11 @@ import time
 import uuid
 from aiohttp import web
 from server import PromptServer
+import folder_paths
 
 from .classes.WebSocketManager import WebSocketManager
 
-DATA_FOLDER = './nexus'
+DATA_FOLDER = f"{folder_paths.base_path}/nexus"
 
 PERMISSIONS_FILE = os.path.join(DATA_FOLDER, 'permissions.json')
 ADMINS_FILE = os.path.join(DATA_FOLDER, 'admins.json')
